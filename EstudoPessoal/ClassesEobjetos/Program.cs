@@ -3,7 +3,9 @@
 // Criar um objeto dessa classe no Main
 // Atribuir valores ao objeto e imprimir no console
 
-using System ; // Importa a biblioteca padrão
+// Novo desafio: Pedir para o usuário digitar o nome e a idade
+using System ;
+using System.Diagnostics; // Importa a biblioteca padrão
 
 class Pessoa // Inicializar a classe Pessoa
 {
@@ -22,8 +24,13 @@ class Program // Classe principal - é onde o programa começa de fato a rodar, 
     static void Main(string[] args) // Um vetor de strings com argumentos que podem ser passados ao executar o programa pelo terminal (mas você pode ignorar isso por enquanto).
     {
         Pessoa p1 = new Pessoa(); // cp1 é um objeto da classe Pessoa, está criando um novo objeto (instância) baseado na classe.
-        p1.nome = "João" ;
-        p1.idade =  25;
+        
+        Console.WriteLine("Digite o nome:"); // Usuário digita o nome
+        p1.nome = Console.ReadLine() ; // Console.Readline não recebe nenhum argumento, os partêntesis devem estar vazios.
+
+        Console.WriteLine("Digite a idade");
+        p1.idade = int.Parse(Console.ReadLine());
+
         p1.MostrarDados(); // Chama o método MostrarDados para exibir as informações no console
     }
-}
+}   
