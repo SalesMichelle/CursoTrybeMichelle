@@ -34,3 +34,14 @@ while (i <= 10)
     i++;                    // aumenta o número na próxima repetição
 }
 
+    Comando do-while
+- Similar ao while;
+- Inicialização, condição, atualização;
+- Condição avaliada somente ao final;
+- Bloco de comandos é executado, obrigatoriamente, ao menos 1x.
+
+    Sintaxe:
+do{
+    <bloco_de_comandos>
+} while(<condição>);
+

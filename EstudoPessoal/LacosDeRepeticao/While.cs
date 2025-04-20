@@ -4,6 +4,7 @@ using System ;
 
     class Program 
     {
+         /* 
         static void Main(string[] args)
         {
             Console.Write("Digite um número: ");
@@ -17,4 +18,5 @@ using System ;
                 i++ ;
             }
         }
+        */
     }
